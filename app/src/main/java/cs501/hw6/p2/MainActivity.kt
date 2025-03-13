@@ -45,15 +45,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-
+            PolygonAndPolyline()
         }
     }
 }
 
 
-@Preview
 @Composable
-fun PolygonExample() {
+fun PolygonAndPolyline() {
     val initLocation = LatLng(42.44161845167356,-71.06247011572123)
     val parkPoints = listOf(
         LatLng(42.43605417501554,-71.0661568120122),
